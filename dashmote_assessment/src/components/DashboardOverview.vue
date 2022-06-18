@@ -51,6 +51,7 @@
         </thead>
         <tbody>
           <tr v-for="(project, index) in filteredProjects" :key="index">
+            <div :class="`side-${project.category}`"></div>
             <td>
               <a-avatar :class="`${project.category}`"> {{ project.category }}</a-avatar>
             </td>

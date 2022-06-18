@@ -24,6 +24,30 @@ body {
     background-color: #f0e5fb;
 }
 
+.side-C{
+    background-color: #1c90ff;
+    display: table-cell;
+    width: 10px;
+    overflow: hidden;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.side-D{
+    background-color: #56dda2;
+    display: table-cell;
+    width: 10px;
+    overflow: hidden;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.side-F{
+    background-color: #b37feb;
+    display: table-cell;
+    width: 10px;
+    overflow: hidden;
+    border-radius: 5px 0px 0px 5px;
+}
+
 table{
     border-collapse: separate;
     border-spacing: 0px 15px;
@@ -31,6 +55,7 @@ table{
 
 td{
     width: 150px;
+    height: 5em;
     text-align: center;
     padding: 5px;
     background-color: white;
