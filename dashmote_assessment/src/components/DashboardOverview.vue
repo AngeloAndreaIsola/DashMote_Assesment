@@ -29,7 +29,7 @@
       <tbody>
         <tr v-for="(project, index) in filteredProjects" :key="index">
           <td>
-            <a-avatar class=""> {{ project.category }}</a-avatar>
+            <a-avatar :class="`${project.category}`"> {{ project.category }}</a-avatar>
           </td>
 
           <td>
@@ -65,7 +65,8 @@ export default {
   data() {
     return {
       projects: json,
-      search: ''
+      search: '',
+      theme: 'blue-theme',
     };
   },
   methods: {
