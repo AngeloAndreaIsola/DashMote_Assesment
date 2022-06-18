@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <!-- Heading -->
-    <h2 class="text-center mt-5">My Vue Todo App</h2>
+    <h2 class="text-center mt-5">Project dashboards overview</h2>
 
     <!-- Input -->
     <div class="d-flex mt-5">
-      <input type="text" v-model="project" placeholder="Enter project" class="w-100 form-control" />
+      <input type="text" v-model="search" placeholder="Search for a keyword" class="w-100 form-control" />
       <button class="btn btn-warning rounded-0" @click="submitproject">
         SUBMIT
       </button>
@@ -17,7 +17,7 @@
         <tr>
           <!-- <th scope="col">project</th> -->
           <!-- <th scope="col" style="width: 120px">Status</th> -->
-          <th scope="col" style="width: 120px">personal icon</th>
+          <th scope="col" style="width: 120px">category</th>
           <th scope="col" style="width: 120px">project #</th>
           <th scope="col" style="width: 120px">users</th>
           <th scope="col" style="width: 120px">dashboards</th>
@@ -27,7 +27,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(project, index) in projects" :key="index">
+        <tr v-for="(project, index) in filteredProjects" :key="index">
           <!-- <td>
             <span :class="{ 'line-through': project.status === 'finished' }">
               {{ project.name }}
@@ -43,7 +43,9 @@
             </span>
           </td> -->
 
-          <td></td>
+          <td>
+            {{ project.category }}
+          </td>
 
           <td>
             <p> {{ project.name }}</p>
@@ -79,9 +81,9 @@ export default {
     msg: String,
   },
   data() {
-    console.log(json);
     return {
-      projects: json
+      projects: json,
+      search:''
     };
   },
   methods: {
@@ -96,10 +98,18 @@ export default {
      */
     deleteproject(index) {
       if (confirm("Do you really want to delete this project?")) {
-        this.projects.splice(index, 1);
+        this.projects.splice(index, 1);  
       }
     }
   },
+
+  computed:{
+    filteredProjects: function(){
+      return this.projects.filter((project)=>{
+        return project.name.match(this.search)
+      });
+    }
+  }
 };
 </script>
 
