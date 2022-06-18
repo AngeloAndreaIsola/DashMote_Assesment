@@ -28,21 +28,6 @@
       </thead>
       <tbody>
         <tr v-for="(project, index) in filteredProjects" :key="index">
-          <!-- <td>
-            <span :class="{ 'line-through': project.status === 'finished' }">
-              {{ project.name }}
-            </span>
-          </td> -->
-          <!-- <td>
-            <span class="pointer noselect" @click="changeStatus(index)" :class="{
-              'text-danger': project.status === 'to-do',
-              'text-success': project.status === 'finished',
-              'text-warning': project.status === 'in-progress',
-            }">
-              {{ capitalizeFirstChar(project.status) }}
-            </span>
-          </td> -->
-
           <td>
             {{ project.category }}
           </td>
@@ -59,7 +44,9 @@
 
           <td class="text-center">
             <div @click="deleteproject(index)">
-              <Button type="text" danger>Delete</Button>
+              <Button type="text" danger>
+                Delete
+              </Button>
             </div>
           </td>
           <td class="text-center">
@@ -83,7 +70,7 @@ export default {
   data() {
     return {
       projects: json,
-      search:''
+      search: ''
     };
   },
   methods: {
@@ -98,14 +85,14 @@ export default {
      */
     deleteproject(index) {
       if (confirm("Do you really want to delete this project?")) {
-        this.projects.splice(index, 1);  
+        this.projects.splice(index, 1);
       }
     }
   },
 
-  computed:{
-    filteredProjects: function(){
-      return this.projects.filter((project)=>{
+  computed: {
+    filteredProjects: function () {
+      return this.projects.filter((project) => {
         return project.name.match(this.search)
       });
     }
