@@ -29,7 +29,7 @@
       <tbody>
         <tr v-for="(project, index) in filteredProjects" :key="index">
           <td>
-            {{ project.category }}
+            <a-avatar class=""> {{ project.category }}</a-avatar>
           </td>
 
           <td>
@@ -40,13 +40,13 @@
             <p> {{ project.users }} users</p>
           </td>
 
-          <td> {{ project.dashboards }} dashboards</td>
+          <td>
+            <div class="dashboardsNumber">{{ project.dashboards }} dashboards</div>
+          </td>
 
           <td class="text-center">
             <div @click="deleteproject(index)">
-              <Button type="text" danger>
-                Delete
-              </Button>
+              <a-button type="text" danger>Delete</a-button>
             </div>
           </td>
           <td class="text-center">

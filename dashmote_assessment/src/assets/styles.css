@@ -5,7 +5,10 @@ body {
 .dashboardsNumber {
     background-color: #cdf5e3;
     color: #56dda2;
-    border-radius: 15%;
+    border-radius: 20%;
+    display: inline-block;
+    border-style: ridge;
+    border-color: #00cc74;
 }
 
 .D{
