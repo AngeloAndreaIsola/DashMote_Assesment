@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
-import 'ant-design-vue/dist/antd.css'
 import App from './App.vue'
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+import './assets/styles.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(Antd) // same as Vue.use in Vue 2.X
+app.mount('#app')
