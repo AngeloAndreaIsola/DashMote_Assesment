@@ -33,7 +33,7 @@
       </button> -->
     </div>
 
-    <div style="width:800px; margin:0 auto;">
+    <div style="width:800px; margin:0 auto; overflow-y: scroll; height:400px;">
       <!-- project table -->
       <table class="table table-bordered mt-5">
         <thead>
