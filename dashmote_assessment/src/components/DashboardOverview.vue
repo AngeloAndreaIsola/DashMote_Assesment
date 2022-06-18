@@ -46,14 +46,14 @@
           <td></td>
 
           <td>
-            <p>Project #</p>
+            <p> {{ project.name }}</p>
           </td>
 
           <td>
-            <p>n users</p>
+            <p> {{ project.users }} users</p>
           </td>
 
-          <td>m dashboards</td>
+          <td> {{ project.dashboards }} dashboards</td>
 
           <td class="text-center">
             <div @click="deleteproject(index)">
@@ -72,31 +72,16 @@
 </template>
 
 <script>
+import json from '../assets/data.json'
 export default {
   name: "HelloWorld",
   props: {
     msg: String,
   },
   data() {
+    console.log(json);
     return {
-      project: "",
-      editedproject: null,
-      statuses: ["to-do", "in-progress", "finished"],
-      /* Status could be: 'to-do' / 'in-progress' / 'finished' */
-      projects: [
-        {
-          name: "Steal bananas from the supermarket.",
-          status: "to-do",
-        },
-        {
-          name: "Eat 1 kg chocolate in 1 hour.",
-          status: "in-progress",
-        },
-        {
-          name: "Create YouTube video.",
-          status: "finished",
-        },
-      ],
+      projects: json
     };
   },
   methods: {
@@ -107,46 +92,13 @@ export default {
       return str.charAt(0).toUpperCase() + str.slice(1);
     },
     /**
-     * Change status of project by index
-     */
-    changeStatus(index) {
-      let newIndex = this.statuses.indexOf(this.projects[index].status);
-      if (++newIndex > 2) newIndex = 0;
-      this.projects[index].status = this.statuses[newIndex];
-    },
-    /**
      * Deletes project by index
      */
     deleteproject(index) {
       if (confirm("Do you really want to delete this project?")) {
         this.projects.splice(index, 1);
       }
-    },
-    /**
-     * Edit project
-     */
-    editproject(index) {
-      this.project = this.projects[index].name;
-      this.editedproject = index;
-    },
-    /**
-     * Add / Update project
-     */
-    submitproject() {
-      if (this.project.length === 0) return;
-      /* We need to update the project */
-      if (this.editedproject != null) {
-        this.projects[this.editedproject].name = this.project;
-        this.editedproject = null;
-      } else {
-        /* We need to add new project */
-        this.projects.push({
-          name: this.project,
-          status: "todo",
-        });
-      }
-      this.project = "";
-    },
+    }
   },
 };
 </script>
