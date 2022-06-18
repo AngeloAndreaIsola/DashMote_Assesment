@@ -49,11 +49,6 @@
               <a-button type="text" danger>Delete</a-button>
             </div>
           </td>
-          <td class="text-center">
-            <div @click="editproject(index)">
-              <p class="fa fa-pen pointer"></p>
-            </div>
-          </td>
         </tr>
       </tbody>
     </table>
