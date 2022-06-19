@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <!-- Heading -->
-    <h2 class="text-center mt-5">Project dashboards overview</h2>
+    <p>Sarah Green</p>
+    <a-avatar src="https://joeschmoe.io/api/v1/random" />
 
     <!-- Input -->
     <div class="d-flex mt-5">
