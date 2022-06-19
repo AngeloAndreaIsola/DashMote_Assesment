@@ -47,7 +47,7 @@
       </button> -->
     </div>
 
-    <div style="width:800px; margin:0 auto; overflow-y: scroll; height:400px;">
+    <!-- <div id="table-container"> -->
       <!-- project table -->
       <table class="table table-bordered mt-5">
         <thead>
@@ -90,7 +90,7 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    <!-- </div> -->
 
 
   </div>
