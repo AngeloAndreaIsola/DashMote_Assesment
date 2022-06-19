@@ -2,9 +2,18 @@
   <div class="container">
     <!-- Heading -->
     <nav>
-      <BellOutlined />
+      <!-- <BellOutlined />
       <p>Sarah Green</p>
-      <a-avatar src="https://joeschmoe.io/api/v1/random" />
+      <a-avatar src="https://joeschmoe.io/api/v1/random" /> -->
+
+
+      <a-page-header class="site-page-header">
+        <template #extra>
+          <BellOutlined :style="{ fontSize: '20px' }" />
+          <h1 style="fontSize: 14px; line-height: 22px; display: inline-block;">Sarah Green</h1>
+          <a-avatar src="https://joeschmoe.io/api/v1/random" />
+        </template>
+      </a-page-header>
     </nav>
 
 
@@ -89,6 +98,9 @@
 
 <script>
 import json from '../assets/data.json'
+import { BellOutlined } from '@ant-design/icons-vue';
+
+
 export default {
   name: "HelloWorld",
   props: {
@@ -125,7 +137,11 @@ export default {
         return project.name.match(this.search)
       });
     }
-  }
+  },
+
+  components: {
+    BellOutlined,
+  },
 };
 </script>
 

@@ -133,9 +133,11 @@ th:last-child {
 }
 
 nav {
+    height: 62px;
     border-bottom-style: groove;
+
 }
 
-nav>* {
+/* nav>* {
     display: inline-block;
-}
+} */
