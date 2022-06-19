@@ -3,6 +3,7 @@ import App from './App.vue'
 import Antd from 'ant-design-vue/es';
 import 'ant-design-vue/dist/antd.css';
 import './assets/styles.css'
+import '@ant-design/icons-vue'
 
 const app = createApp(App)
 

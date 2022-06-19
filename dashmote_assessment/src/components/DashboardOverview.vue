@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <!-- Heading -->
+    <BellOutlined />
     <p>Sarah Green</p>
     <a-avatar src="https://joeschmoe.io/api/v1/random" />
 
