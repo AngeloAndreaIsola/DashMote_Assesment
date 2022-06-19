@@ -11,20 +11,22 @@ body {
     border-color: #00cc74;
 }
 
-.C{
+.C {
     color: #1c90ff;
     background-color: #d2e9ff;
 }
-.D{
+
+.D {
     color: #56dda2;
     background-color: #cdf5e3;
 }
-.F{
+
+.F {
     color: #b37feb;
     background-color: #f0e5fb;
 }
 
-.side-C{
+.side-C {
     background-color: #1c90ff;
     display: table-cell;
     width: 10px;
@@ -32,7 +34,7 @@ body {
     border-radius: 5px 0px 0px 5px;
 }
 
-.side-D{
+.side-D {
     background-color: #56dda2;
     display: table-cell;
     width: 10px;
@@ -40,7 +42,7 @@ body {
     border-radius: 5px 0px 0px 5px;
 }
 
-.side-F{
+.side-F {
     background-color: #b37feb;
     display: table-cell;
     width: 10px;
@@ -48,12 +50,12 @@ body {
     border-radius: 5px 0px 0px 5px;
 }
 
-table{
+table {
     border-collapse: separate;
     border-spacing: 0px 15px;
 }
 
-td{
+td {
     width: 150px;
     height: 5em;
     text-align: center;
@@ -68,11 +70,20 @@ td{
  */
 td:first-child,
 th:first-child {
-  border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
 }
+
 /* Set border-radius on the top-left and bottom-left of the first table data on the table row
  */
 td:last-child,
 th:last-child {
-  border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+nav {
+    border-bottom-style: groove;
+}
+
+nav>* {
+    display: inline-block;
 }
