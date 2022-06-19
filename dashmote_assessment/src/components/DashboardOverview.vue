@@ -62,11 +62,11 @@
             </td>
 
             <td>
-              <p> {{ project.name }}</p>
+              <p class="project"> {{ project.name }}</p>
             </td>
 
             <td>
-              <p> {{ project.users }} users</p>
+              <p class='user'> {{ project.users }} users</p>
             </td>
 
             <td>

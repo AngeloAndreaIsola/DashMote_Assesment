@@ -3,12 +3,55 @@ body {
 }
 
 .dashboardsNumber {
-    background-color: #cdf5e3;
-    color: #56dda2;
-    border-radius: 5px 5px 5px 5px;
+    color: #00CC74;
     display: inline-block;
-    border-style: ridge;
-    border-color: #00cc74;
+
+    /* GreenOpacity */
+    background: #CCF5E3;
+
+    /* Green */
+    border: 1px solid #00CC74;
+    border-radius: 4px;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 10px;
+
+}
+
+.user {
+    /* Paragraph Regular */
+
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+
+    /* Dark Grey */
+
+    color: #52594D;
+}
+
+.project {
+    /* Header 3 */
+
+    /* font-family: 'Roboto Medium'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+
+    /* Dark Blue */
+
+    color: #223273;
+
 }
 
 .C {
@@ -31,7 +74,10 @@ body {
     display: table-cell;
     width: 10px;
     overflow: hidden;
-    border-radius: 5px 0px 0px 5px;
+
+    width: 10.5px;
+    height: 70px;
+    border-radius: 4px 0px 0px 4px
 }
 
 .side-D {
@@ -39,7 +85,10 @@ body {
     display: table-cell;
     width: 10px;
     overflow: hidden;
-    border-radius: 5px 0px 0px 5px;
+
+    width: 10.5px;
+    height: 70px;
+    border-radius: 4px 0px 0px 4px
 }
 
 .side-F {
@@ -47,7 +96,10 @@ body {
     display: table-cell;
     width: 10px;
     overflow: hidden;
-    border-radius: 5px 0px 0px 5px;
+
+    width: 10.5px;
+    height: 70px;
+    border-radius: 4px 0px 0px 4px
 }
 
 table {
