@@ -9,7 +9,7 @@
         <template #extra>
           <BellOutlined :style="{ fontSize: '20px' }" />
           <h1 style="fontSize: 14px; line-height: 22px; display: inline-block;">Sarah Green</h1>
-          <a-avatar src="https://joeschmoe.io/api/v1/random" />
+          <a-avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
         </template>
       </a-page-header>
     </nav>
