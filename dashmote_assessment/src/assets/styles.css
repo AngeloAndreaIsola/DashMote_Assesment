@@ -4,12 +4,6 @@ body {
 
 
 
-/* .container{
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    overflow-x: visible;
-} */
 
 .dashboardsNumber {
     color: #00CC74;
@@ -33,8 +27,6 @@ body {
 
 .user {
     /* Paragraph Regular */
-
-    /* font-family: 'Roboto'; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -114,19 +106,11 @@ body {
 table {
     border-collapse: separate;
     border-spacing: 0px 15px;
-
     margin-left: 10%;
     margin-right: 10%;
-
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* margin-top: 10%;
-    margin-bottom: 10%; */
     overflow-y: scroll;
-    /* width: 75%; */
     width: 80%;
     table-layout: auto;
-    
 }
 
 tr {
@@ -169,13 +153,10 @@ nav {
 #search {
     box-sizing: border-box;
     float: right;
-    /* margin-left: auto;
-    margin-right: auto; */
     width: 20%;
     height: 70px;
     bottom: 0%;
     border-radius: 8px;
-    
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -184,25 +165,6 @@ nav {
 .tabAndSearch {
     display: inline-block;
     position: relative;
-    /* width: 75%; 
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;*/
-
     margin-top: 10%;
     width: 100%;
 }
-
-/* #table-container {
-    width: 800px;
-    margin: 0 auto;
-    overflow-y: scroll;
-    height: 400px;
-    margin-top: 260px;
-} */
-
-
-
-/* nav>* {
-    display: inline-block;
-} */
