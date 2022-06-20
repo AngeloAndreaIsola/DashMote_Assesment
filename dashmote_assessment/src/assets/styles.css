@@ -1,5 +1,9 @@
 body {
     background-color: #f2f6fc;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
 }
 
 
@@ -106,11 +110,14 @@ body {
 table {
     border-collapse: separate;
     border-spacing: 0px 15px;
-    margin-left: 10%;
-    margin-right: 10%;
-    overflow-y: scroll;
+    /* margin-left: 10%;
+    margin-right: 10%; 
     width: 80%;
+    */
+    overflow-y: scroll;
     table-layout: auto;
+
+    width: 100%;
 }
 
 tr {
@@ -146,19 +153,25 @@ nav {
     height: 62px;
     /* border-bottom-style: groove; */
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 
 #search {
     box-sizing: border-box;
-    float: right;
-    width: 20%;
-    height: 70px;
+    width: 220px;
+    height: 2.5em;
     bottom: 0%;
     border-radius: 8px;
-    margin-left: 10%;
-    margin-right: 10%;
+    border: 1px solid #C4C4C4;
+    background: #FFFFFF;
+    flex-shrink: 0;
+    float: right;
+    
+    /*
+    float: right;
+     margin-left: 10%;
+    margin-right: 10%; */
 }
 
 

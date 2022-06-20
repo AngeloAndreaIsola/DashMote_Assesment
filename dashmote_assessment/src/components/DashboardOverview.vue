@@ -19,10 +19,10 @@
 
     <div class="tabAndSearch">
       <!-- Input -->
-      <div class="d-flex mt-5" id="search">
+      <div class="d-flex mt-5">
 
-        <div class="ant-transfer-list-body-search-wrapper">
-          <span class="ant-input-affix-wrapper ant-transfer-list-search">
+        <div class="ant-transfer-list-body-search-wrapper" >
+          <span class="ant-input-affix-wrapper ant-transfer-list-search"  id="search">
             <span class="ant-input-prefix"><span role="img" aria-label="search" class="anticon anticon-search">
                 <svg focusable="false" class="" data-icon="search" width="1em" height="1em" fill="currentColor"
                   aria-hidden="true" viewBox="64 64 896 896">
