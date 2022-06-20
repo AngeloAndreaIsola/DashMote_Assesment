@@ -56,8 +56,8 @@ body {
 }
 
 .C {
-    color: #56dda2;
-    background-color: #cdf5e3;
+    color: #00CC74;
+    background-color: #CCF5E3;
 }
 
 .D {
@@ -70,7 +70,7 @@ body {
     background-color: #f0e5fb;
 }
 
-.side-C {
+.side-D {
     background-color: #1c90ff;
     display: table-cell;
     width: 10px;
@@ -81,8 +81,8 @@ body {
     border-radius: 4px 0px 0px 4px
 }
 
-.side-D {
-    background-color: #56dda2;
+.side-C {
+    background-color: #00CC74;
     display: table-cell;
     width: 10px;
     overflow: hidden;
