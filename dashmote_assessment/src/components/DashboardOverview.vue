@@ -5,24 +5,31 @@
       <div class="ant-col ant-col-16 ant-col-offset-3"> -->
     <!-- Heading -->
     <nav>
+
       <a-page-header class="site-page-header">
+
         <template #extra>
           <BellOutlined :style="{ fontSize: '20px' }" />
-          <h1 style="fontSize: 14px; line-height: 22px; display: inline-block;">Sarah Green</h1>
+          <h1 id='name' style="fontSize: 14px; line-height: 22px;">Sarah Green</h1>
           <a-avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
         </template>
       </a-page-header>
     </nav>
-    
+
     <a-divider style="margin: 0;"></a-divider>
+
+    <div class="mobileHeader">
+      <h1>Hello Sarah!</h1>
+      <p>Here you can find your projects and dashboards.</p>
+    </div>
 
 
     <div class="tabAndSearch">
       <!-- Input -->
       <div class="d-flex mt-5">
 
-        <div class="ant-transfer-list-body-search-wrapper" >
-          <span class="ant-input-affix-wrapper ant-transfer-list-search"  id="search">
+        <div class="ant-transfer-list-body-search-wrapper">
+          <span class="ant-input-affix-wrapper ant-transfer-list-search" id="search">
             <span class="ant-input-prefix"><span role="img" aria-label="search" class="anticon anticon-search">
                 <svg focusable="false" class="" data-icon="search" width="1em" height="1em" fill="currentColor"
                   aria-hidden="true" viewBox="64 64 896 896">
@@ -72,16 +79,16 @@
             <p class="project"> {{ project.name }}</p>
           </td>
 
-          <td>
+          <td class="collapse">
             <p class='user'> {{ project.users }} users</p>
           </td>
 
-          <td>
+          <td class="collapse">
             <div class="dashboardsNumber">{{ project.dashboards }} dashboards</div>
           </td>
 
-          <td class="text-center">
-            <div @click="deleteproject(index)">
+          <td class="collapse">
+            <div class="delete" @click="deleteproject(index)">
               <a-button type="text" danger>Delete</a-button>
             </div>
           </td>
@@ -101,6 +108,7 @@
 <script>
 import json from '../assets/data.json'
 import { BellOutlined } from '@ant-design/icons-vue';
+
 
 
 

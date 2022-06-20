@@ -6,7 +6,13 @@ body {
 
 }
 
+.mobileHeader{
+    display:none;
+}
 
+#name{
+   display: inline-block;
+}
 
 
 .dashboardsNumber {
@@ -159,7 +165,7 @@ nav {
 
 #search {
     box-sizing: border-box;
-    width: 220px;
+    width: 200px;
     height: 2.5em;
     bottom: 0%;
     border-radius: 8px;
@@ -167,7 +173,7 @@ nav {
     background: #FFFFFF;
     flex-shrink: 0;
     float: right;
-    
+
     /*
     float: right;
      margin-left: 10%;
@@ -180,4 +186,36 @@ nav {
     position: relative;
     margin-top: 10%;
     width: 100%;
+}
+
+@media all and (max-width: 800px)  {
+    .mobileHeader{
+        display:block;
+        margin-bottom: 0%;
+    }
+
+    #name{
+        display: none;
+    }
+
+    #search {
+        box-sizing: border-box;
+        width: 100%;
+        height: 2.5em;
+        bottom: 0%;
+        border-radius: 8px;
+        border: 1px solid #C4C4C4;
+        background: #FFFFFF;
+        flex-shrink: 0;
+        float: right;
+    
+        /*
+        float: right;
+         margin-left: 10%;
+        margin-right: 10%; */
+    }
+
+    .collapse{
+        display: none;
+    }
 }
