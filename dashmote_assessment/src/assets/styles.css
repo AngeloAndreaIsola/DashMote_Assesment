@@ -1,12 +1,62 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900,300light);
 
+table {
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    /* margin-left: 10%;
+    margin-right: 10%; 
+    width: 80%;
+    */
+    overflow-y: scroll;
+    table-layout: auto;
+    width: 100%;
+}
+tr {
+    box-shadow: 0px 4px 20px rgba(120, 120, 120, 0.15);
+}
+td {
+    width: 250px;
+    height: 5em;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+}
+/* Make table row with rounded borders
+ */
+/* Set border-radius on the top-left and bottom-left of the first table data on the table row
+ */
+td:first-child,
+th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+/* Set border-radius on the top-left and bottom-left of the first table data on the table row
+ */
+td:last-child,
+th:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.row{
+    width: 200px;
+    height: 5em;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+}
+
+.desktop{
+    width: 100%;
+    overflow-y: scroll;
+    table-layout: auto;
+    max-height: 510px;
+}
+
 
 body {
     background-color: #f2f6fc;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-
 }
 
 /* Hide mobile welcome message */
@@ -19,25 +69,21 @@ body {
     display: none;
 }
 
-/* Set name font */
-#name {
-    /* Header 3 */
 
+#name {
+    /* Set name font */
+    /* Header 3 */
     font-family: 'Roboto';
     font-style: medium;
     font-size: 14px;
     line-height: 22px;
     /* identical to box height, or 157% */
 
-
+    /* Set name color */
     /* Dark Blue */
-
     color: #223273;
 
-}
-
-/* Show user name in the nav bar for desktop */
-#name {
+    /* Show user name in the nav bar for desktop */
     display: inline-block;
 }
 
@@ -65,7 +111,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    /* identical to box 
+    /* identical to box */
 
 }
 

@@ -1,8 +1,10 @@
 <template>
   <div>
-    <DashboardOverview></DashboardOverview>
+    <DashboardOverview>
+    </DashboardOverview>
     <MobileCard></MobileCard>
     <DesktopCard></DesktopCard>
+
   </div>
 </template>
 

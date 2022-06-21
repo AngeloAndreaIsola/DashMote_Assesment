@@ -1,6 +1,6 @@
 <template>
     <div class="desktop">
-        <div :class="`row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
+        <div :class="`desktop row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
             <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>
             <p class="project"> {{ project.name }}</p>
             <p class='user'> {{ project.users }} users</p>
@@ -56,7 +56,10 @@ export default {
 </script>
 
 <style scoped>
+.desktop{
+    width: 70rem;
 
+}
 /* Generic row for desktop */
 .row {
     display: flex;
@@ -64,9 +67,9 @@ export default {
     overflow: hidden;
     background: white;
     padding: 15px;
-
     margin-top: 15px;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 /* Hide numeration */
