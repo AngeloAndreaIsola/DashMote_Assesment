@@ -1,6 +1,6 @@
 <template>
   <div class="mobile">
-    <div>My projects:</div>
+    <h3>My projects:</h3>
     <details :class="`warning row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
       <summary>
         <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>{{ project.name }}
@@ -53,56 +53,27 @@ export default {
 </script>
 
 <style scoped>
-/*
-Native <details> element styling
-AUTHOR: https://codepen.io/nicolasjengler 
-
-+ replaced list-item styling with flex and pseudo-element content on summary => vertically aligned sign with summary content
-+ added selection and focus outline matching detail style
-+ addede custom list-style-type
-  - corona-warning  
-  - corona-info
-  - corona-alert
-+ fix body height –> min-height: 
-  allow scroll on all details opened
-*/
-
-/* 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap'); */
-
-/* :root {
-  --color-bg: #EEEDEB;
-  --color-title: #0E1C4E;
-
-  --color-summary-1: #FFF6EE;
-  --color-summary-2: #FAFAFF;
-  --color-summary-3: #FFF0F3;
-
-  --color-summary-C-highlight: #00CC74;
-  --color-summary-D-highlight: #1c90ff;
-  --color-summary-F-highlight: #b37feb;
-
-
-  --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
-} */
-
-/* html,
-body {
-  overflow: auto;
-  min-height: 100vh;
-  width: 100%;
-  background: var(--color-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .mobile {
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 4px;
   max-width: 30em;
   width: 100%;
+
+  /* Set font for "My projects" and projects name */
+  /* Header 3 */
+
+  font-family: 'Roboto';
+  font-style: medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+
+  /* Dark Blue */
+
+  color: #223273;
 }
 
 /* Hide arrow marker on the side */
@@ -126,12 +97,6 @@ details {
 details {
   margin-top: 15px;
 }
-
-/* details.warning {
-  --highlight: var(--color-summary-C-highlight);
-  background: var(--color-summary-C);
-  border-left-color: var(--color-summary-C-highlight);
-} */
 
 /* Hide numeration for elemntes in warning */
 details.warning p {

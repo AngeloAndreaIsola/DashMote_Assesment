@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900,300light);
+
+
 body {
     background-color: #f2f6fc;
     display: flex;
@@ -14,6 +17,23 @@ body {
 /* Hide mobile porjects list */
 .mobile {
     display: none;
+}
+
+/* Set name font */
+#name {
+    /* Header 3 */
+
+    font-family: 'Roboto';
+    font-style: medium;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+
+    /* Dark Blue */
+
+    color: #223273;
+
 }
 
 /* Show user name in the nav bar for desktop */
@@ -40,10 +60,18 @@ body {
     padding: 4px 16px;
     gap: 10px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box 
+
 }
 
 .user {
     /* Paragraph Regular */
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -106,6 +134,20 @@ nav {
     background: #FFFFFF;
     flex-shrink: 0;
     float: right;
+
+    /* Paragraph Regular */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+
+    /* Middle Grey */
+
+    color: #787878;
 }
 
 
@@ -134,6 +176,45 @@ nav {
         margin-bottom: 0%;
     }
 
+    /* Hello Sarah! */
+    .mobileHeader>h1 {
+        width: 137px;
+        height: 38px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        /* identical to box height, or 158% */
+
+        letter-spacing: 0.02em;
+
+        /* Dark Blue */
+
+        color: #223273;
+    }
+
+    /* Here you can find your projects and dashboards. */
+    .mobileHeader>p {
+        width: 337px;
+        height: 20px;
+        left: 24px;
+        top: 120px;
+
+        font-family: 'Roboto';
+        font-style: light;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        letter-spacing: 0.02em;
+
+        /* Dark Blue */
+
+        color: #223273;
+    }
+
     /* Hide username in the navbar for mobile */
     #name {
         display: none;
@@ -154,6 +235,20 @@ nav {
         float: right;
          margin-left: 10%;
         margin-right: 10%; */
+
+        /* Paragraph Regular */
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height, or 157% */
+
+
+        /* Middle Grey */
+
+        color: #787878;
     }
 }
 
