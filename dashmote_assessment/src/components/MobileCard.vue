@@ -133,51 +133,23 @@ details {
   border-left-color: var(--color-summary-C-highlight);
 } */
 
+/* Hide numeration for elemntes in warning */
 details.warning p {
   list-style-type: none;
-
 }
 
-details.info {
-  --highlight: var(--color-summary-D-highlight);
-  background: var(--color-summary-D);
-  border-left-color: var(--color-summary-D-highlight);
-}
-
-details.info p {
-  list-style-type: corona-info;
-}
-
-details.alert {
-  --highlight: var(--color-summary-F-highlight);
-  background: var(--color-summary-F);
-  border-left-color: var(--highlight);
-}
-
-details.alert p {
-  list-style-type: corona-alert;
-}
 
 summary::-webkit-details-marker,
 p::-webkit-details-marker {
   display: none;
 }
 
-/* summary:focus,
-p:focus {
-    outline: solid 3px var(--highlight);
-} */
-
-summary::selection,
-p::selection {
-  background-color: var(--highlight);
-}
 
 p {
   display: list-item;
   cursor: default;
   margin-left: 3rem;
-  list-style-type: corona;
+  /* list-style-type: corona; */
 }
 
 summary::before {
@@ -201,25 +173,7 @@ summary::before {
 }
 
 
-
-/* @counter-style corona-warning {
-    system: cyclic;
-    symbols: 🧼 🩺 👩🏻‍⚕️ 🚑;
-    suffix: " ";
-}
-
-@counter-style corona-info {
-    system: cyclic;
-    symbols: 🧬;
-    suffix: " ";
-}
-
-@counter-style corona-alert {
-    system: fixed;
-    symbols: 💉 🩸 😷 🦠 🧫;
-    suffix: " ";
-} */
-
+/* Define colors for left border */
 .F {
   border-left: 15px solid #b37feb;
 }
