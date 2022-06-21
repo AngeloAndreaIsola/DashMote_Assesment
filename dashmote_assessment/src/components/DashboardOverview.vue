@@ -9,7 +9,9 @@
       <a-page-header class="site-page-header">
 
         <template #extra>
-          <BellOutlined :style="{ fontSize: '20px' }" />
+          <a-badge dot>
+            <BellOutlined :style="{ fontSize: '20px' }" />
+          </a-badge>
           <h1 id='name' style="fontSize: 14px; line-height: 22px;">Sarah Green</h1>
           <a-avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
         </template>
