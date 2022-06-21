@@ -69,6 +69,7 @@ export default {
     margin-top: 15px;
     justify-content: space-evenly;
     width: 100%;
+    
 }
 
 /* Hide numeration */

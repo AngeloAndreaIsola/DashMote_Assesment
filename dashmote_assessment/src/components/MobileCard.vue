@@ -1,7 +1,7 @@
 <template>
   <div class="mobile">
     <h3>My projects:</h3>
-    <details :class="`warning row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
+    <details :class="`warning ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
       <summary>
         <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>
         {{ project.name }}
