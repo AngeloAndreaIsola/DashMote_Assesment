@@ -3,12 +3,14 @@
     <h3>My projects:</h3>
     <details :class="`warning row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
       <summary>
-        <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>{{ project.name }}
+        <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>
+        {{ project.name }}
       </summary>
+      <p></p>
       <p class='user'> {{ project.users }} users</p>
       <div class="dashboardsNumber">{{ project.dashboards }} dashboards</div>
-      <div class="delete" @click="deleteproject(index)">
-        <a-button type="text" danger>Delete</a-button>
+      <div class="delete">
+        <a-button type="text" danger  @click="deleteproject(index)">Delete</a-button>
       </div>
     </details>
 
@@ -95,11 +97,25 @@ details {
 
 details {
   margin-top: 15px;
+
+}
+
+/* Center dashboards in mobile */
+details.warning div {
+  justify-content: center;
+}
+
+/* Center delete button */
+.delete{
+  margin: auto;
+  text-align: center;
 }
 
 /* Hide numeration for elemntes in warning */
 details.warning p {
   list-style-type: none;
+  margin: auto;
+  text-align: center;
 }
 
 
