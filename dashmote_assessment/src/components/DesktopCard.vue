@@ -58,7 +58,6 @@ export default {
 <style scoped>
 .desktop{
     width: 70rem;
-
 }
 /* Generic row for desktop */
 .row {
