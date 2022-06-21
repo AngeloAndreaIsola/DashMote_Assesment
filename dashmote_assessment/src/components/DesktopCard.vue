@@ -70,6 +70,7 @@ export default {
     justify-content: space-evenly;
     width: 100%;
     
+    align-items:flex-start;
 }
 
 /* Hide numeration */
