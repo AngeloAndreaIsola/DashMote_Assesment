@@ -63,7 +63,6 @@ export default {
     border-radius: 5px;
     overflow: hidden;
     background: white;
-    border-left: 15px solid gray;
     padding: 15px;
 
     margin-top: 15px;
@@ -78,14 +77,14 @@ export default {
 
 /* Color left side border */
 .F {
-    border-left: 15px solid #b37feb;
+    border-left: 10px solid #b37feb;
 }
 
 .C {
-    border-left: 15px solid #00CC74;
+    border-left: 10px solid #00CC74;
 }
 
 .D {
-    border-left: 15px solid #1c90ff;
+    border-left: 10px solid #1c90ff;
 }
 </style>
