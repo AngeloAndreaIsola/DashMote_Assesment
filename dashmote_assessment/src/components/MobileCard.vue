@@ -10,7 +10,7 @@
       <p class='user'> {{ project.users }} users</p>
       <div class="dashboardsNumber">{{ project.dashboards }} dashboards</div>
       <div class="delete">
-        <a-button type="text" danger  @click="deleteproject(index)">Delete</a-button>
+        <a-button type="text" danger @click="deleteproject(index)">Delete</a-button>
       </div>
     </details>
 
@@ -106,7 +106,7 @@ details.warning div {
 }
 
 /* Center delete button */
-.delete{
+.delete {
   margin: auto;
   text-align: center;
 }

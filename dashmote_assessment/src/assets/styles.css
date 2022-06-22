@@ -37,7 +37,6 @@ th:last-child {
 }
 
 .row{
-    /* Width makes mobile view not expand and less wider */
     width: 200px;
     height: 5em;
     text-align: center;
