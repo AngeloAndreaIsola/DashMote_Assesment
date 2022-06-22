@@ -11,9 +11,11 @@ table {
     table-layout: auto;
     width: 100%;
 }
+
 tr {
     box-shadow: 0px 4px 20px rgba(120, 120, 120, 0.15);
 }
+
 td {
     width: 250px;
     height: 5em;
@@ -21,6 +23,7 @@ td {
     padding: 5px;
     background-color: white;
 }
+
 /* Make table row with rounded borders
  */
 /* Set border-radius on the top-left and bottom-left of the first table data on the table row
@@ -29,6 +32,7 @@ td:first-child,
 th:first-child {
     border-radius: 10px 0 0 10px;
 }
+
 /* Set border-radius on the top-left and bottom-left of the first table data on the table row
  */
 td:last-child,
@@ -36,7 +40,7 @@ th:last-child {
     border-radius: 0 10px 10px 0;
 }
 
-.row{
+.row {
     width: 200px;
     height: 5em;
     text-align: center;
@@ -44,7 +48,7 @@ th:last-child {
     background-color: white;
 }
 
-.desktop{
+.desktop {
     width: 100%;
     overflow-y: scroll;
     table-layout: auto;
@@ -70,6 +74,10 @@ body {
 }
 
 
+.anticon-menu {
+    display: none;
+}
+
 #name {
     /* Set name font */
     /* Header 3 */
@@ -87,7 +95,7 @@ body {
     display: inline-block;
 }
 
-.site-page-header{
+.site-page-header {
     border-bottom: 1px solid #C4C4C4;
 }
 
@@ -184,19 +192,19 @@ nav {
     flex-shrink: 0;
     float: right; */
 
-    /* Paragraph Regular */
+/* Paragraph Regular */
 
-    /* font-family: 'Roboto';
+/* font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px; */
-    /* identical to box height, or 157% */
+/* identical to box height, or 157% */
 
 
-    /* Middle Grey */
+/* Middle Grey */
 
-    /* color: #787878;
+/* color: #787878;
 } */
 
 
@@ -208,8 +216,8 @@ nav {
 }
 
 @media all and (max-width: 800px) {
-    .site-page-header{
-        border-bottom:none
+    .site-page-header {
+        border-bottom: none
     }
 
     /* Hide desktop project list */
@@ -301,6 +309,34 @@ nav {
         /* Middle Grey */
 
         color: #787878;
+    }
+
+
+    .anticon-menu {
+        display: inline-block;
+        left: 0%;
+    }
+
+    .left-menu,
+    .right-menu {
+        text-align: center;
+        text-decoration: none;
+        top: 197px;
+        /* width: 128px; */
+        /* max-width: 128px; */
+    }
+
+    .left-menu,
+    .right-menu > *{
+        margin: 10px;
+    }
+
+    .left-menu {
+        float: left;
+    }
+
+    .right-menu {
+        float: right;
     }
 }
 

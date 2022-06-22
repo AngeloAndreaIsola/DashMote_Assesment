@@ -1,14 +1,26 @@
 <template>
   <div class="container">
 
+    <nav>
+      <MenuOutlined class="left-menu" />
+
+
+      <div class="right-menu">
+        <a-badge dot>
+          <BellOutlined :style="{ fontSize: '20px' }" />
+        </a-badge>
+        <h1 id='name' style="fontSize: 14px; line-height: 22px;">Sarah Green</h1>
+        <a-avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
+      </div>
+    </nav>
+
     <!-- <div class="ant-row">
       <div class="ant-col ant-col-16 ant-col-offset-3"> -->
     <!-- Heading -->
-    <nav>
+    <!-- <nav>
 
-<!-- -->
       <a-page-header class="site-page-header" style="padding: 0;">
-
+        <MenuOutlined />
         <template #extra>
           <a-badge dot>
             <BellOutlined :style="{ fontSize: '20px' }" />
@@ -17,8 +29,8 @@
           <a-avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
         </template>
       </a-page-header>
-    </nav>
-<!-- 
+    </nav> -->
+    <!-- 
     <a-divider style="margin=0%"></a-divider> -->
 
     <div class="mobileHeader" style="margin-bottom:0% ;">
@@ -29,8 +41,8 @@
 
     <!-- tabAndSearch -->
     <!-- <div class="">   -->
-      <!-- Input -->
-      <!-- <div class="d-flex mt-5">
+    <!-- Input -->
+    <!-- <div class="d-flex mt-5">
 
         <div class="ant-transfer-list-body-search-wrapper">
           <span class="ant-input-affix-wrapper ant-transfer-list-search" id="search">
@@ -129,6 +141,7 @@
 <script>
 import json from '../assets/data.json'
 import { BellOutlined } from '@ant-design/icons-vue';
+import { MenuOutlined } from '@ant-design/icons-vue'
 
 
 
@@ -172,6 +185,7 @@ export default {
 
   components: {
     BellOutlined,
+    MenuOutlined,
   },
 };
 </script>
