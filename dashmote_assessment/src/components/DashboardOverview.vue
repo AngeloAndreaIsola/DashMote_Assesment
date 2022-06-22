@@ -2,7 +2,7 @@
   <div class="container">
 
     <nav>
-      <MenuOutlined class="left-menu" />
+      <MenuOutlined :style="{ fontSize: '20px' }" class="left-menu" />
 
 
       <div class="right-menu">
