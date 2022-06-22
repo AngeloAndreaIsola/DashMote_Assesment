@@ -87,6 +87,9 @@ body {
     display: inline-block;
 }
 
+.site-page-header{
+    border-bottom: 1px solid #C4C4C4;
+}
 
 .dashboardsNumber {
     color: #00CC74;
@@ -170,7 +173,7 @@ nav {
 }
 
 /* Adapt search bar for desktop */
-#search {
+/* #search {
     box-sizing: border-box;
     width: 200px;
     height: 2.5em;
@@ -179,22 +182,22 @@ nav {
     border: 1px solid #C4C4C4;
     background: #FFFFFF;
     flex-shrink: 0;
-    float: right;
+    float: right; */
 
     /* Paragraph Regular */
 
-    font-family: 'Roboto';
+    /* font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 22px; */
     /* identical to box height, or 157% */
 
 
     /* Middle Grey */
 
-    color: #787878;
-}
+    /* color: #787878;
+} */
 
 
 .tabAndSearch {
@@ -205,6 +208,9 @@ nav {
 }
 
 @media all and (max-width: 800px) {
+    .site-page-header{
+        border-bottom:none
+    }
 
     /* Hide desktop project list */
     .desktop {

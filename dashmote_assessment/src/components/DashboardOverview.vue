@@ -6,7 +6,8 @@
     <!-- Heading -->
     <nav>
 
-      <a-page-header class="site-page-header">
+<!-- -->
+      <a-page-header class="site-page-header" style="padding: 0;">
 
         <template #extra>
           <a-badge dot>
@@ -17,18 +18,19 @@
         </template>
       </a-page-header>
     </nav>
+<!-- 
+    <a-divider style="margin=0%"></a-divider> -->
 
-    <a-divider style="margin: 0;"></a-divider>
-
-    <div class="mobileHeader">
+    <div class="mobileHeader" style="margin-bottom:0% ;">
       <h1>Hello Sarah!</h1>
       <p>Here you can find your projects and dashboards.</p>
     </div>
 
 
-    <div class="tabAndSearch">
+    <!-- tabAndSearch -->
+    <!-- <div class="">   -->
       <!-- Input -->
-      <div class="d-flex mt-5">
+      <!-- <div class="d-flex mt-5">
 
         <div class="ant-transfer-list-body-search-wrapper">
           <span class="ant-input-affix-wrapper ant-transfer-list-search" id="search">
@@ -57,7 +59,7 @@
           </span>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- <table class="table table-bordered mt-5">
