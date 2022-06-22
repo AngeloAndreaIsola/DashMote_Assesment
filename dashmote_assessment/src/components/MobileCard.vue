@@ -76,6 +76,9 @@ export default {
   /* Dark Blue */
 
   color: #223273;
+
+  overflow-y: scroll;
+  max-height: 490px;
 }
 
 /* Hide arrow marker on the side */
