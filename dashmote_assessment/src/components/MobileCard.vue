@@ -87,6 +87,8 @@ export default {
 
 <style scoped>
 
+
+
 .search{
   margin-bottom: 15%;
   margin-top: 0%;

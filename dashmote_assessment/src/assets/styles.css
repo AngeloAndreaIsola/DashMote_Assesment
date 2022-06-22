@@ -175,9 +175,31 @@ body {
 nav {
     height: 62px;
     justify-content: center;
-    /* border-bottom-style: groove; */
+    border-bottom-style: groove;
     /* margin-left: 10%;
     margin-right: 10%; */
+}
+
+.left-menu,
+.right-menu {
+    text-align: center;
+    text-decoration: none;
+    top: 197px;
+    /* width: 128px; */
+    /* max-width: 128px; */
+}
+
+.left-menu,
+.right-menu > *{
+    margin: 10px;
+}
+
+.left-menu {
+    float: left;
+}
+
+.right-menu {
+    float: right;
 }
 
 /* Adapt search bar for desktop */
@@ -218,6 +240,14 @@ nav {
 @media all and (max-width: 800px) {
     .site-page-header {
         border-bottom: none
+    }
+
+    nav {
+        height: 62px;
+        justify-content: center;
+        border-bottom-style: none;
+        /* margin-left: 10%;
+        margin-right: 10%; */
     }
 
     /* Hide desktop project list */
