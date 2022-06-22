@@ -1,8 +1,8 @@
 <template>
   <div class="mobile">
-    <!-- Input -->
-    <div class="d-flex mt-5 search">
 
+    <!--Div for search  -->
+    <div class="d-flex mt-5 search">
       <div class="ant-transfer-list-body-search-wrapper">
         <span class="ant-input-affix-wrapper ant-transfer-list-search" id="search">
           <span class="ant-input-prefix">
@@ -31,6 +31,7 @@
       </div>
     </div>
 
+    <!-- Project list -->
     <h3>My projects:</h3>
     <div class="projectListMobile">
       <details :class="`warning ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
@@ -65,9 +66,7 @@ export default {
     };
   },
   methods: {
-    /**
-     * Deletes project by index
-     */
+    //Deletes project by index
     deleteproject(index) {
       if (confirm("Do you really want to delete this project?")) {
         this.projects.splice(index, 1);
@@ -75,8 +74,8 @@ export default {
     }
   },
 
-  //TODO: make it not case sensitive
   computed: {
+    //Filter for projects (Case insensitive)
     filteredProjects: function () {
       return this.projects.filter((project) => {
         return project.name.toLowerCase().match(this.search.toLowerCase())
@@ -87,11 +86,19 @@ export default {
 </script>
 
 <style scoped>
+/* Make it closer to the header and put to the lsit */
 .search {
   margin-bottom: 15%;
   margin-top: 0%;
+  width: 100%;
 }
 
+/* Make search bar fit better */
+.ant-transfer-list-body-search-wrapper {
+  padding: 0%;
+}
+
+/* Set up fonts and dimensions of mobile div */
 .mobile {
   margin-top: 0px;
   margin-bottom: 40px;
@@ -115,15 +122,18 @@ export default {
   color: #223273;
 }
 
+/* Make only project lsit overflow, and closer to "My projects:" */
 .projectListMobile {
   overflow-y: scroll;
   max-height: 490px;
   margin-top: 0;
 }
 
-h3{
+/* Mkae h3 closer to searchbar */
+h3 {
   margin-bottom: 0%;
 }
+
 /* Hide arrow marker on the side */
 details>summary {
   list-style: none;
@@ -175,7 +185,6 @@ p {
   display: list-item;
   cursor: default;
   margin-left: 3rem;
-  /* list-style-type: corona; */
 }
 
 summary::before {
@@ -186,7 +195,6 @@ summary::before {
   height: 1rem;
   left: 0rem;
   margin-right: .5rem;
-  content: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 
 [open] summary {
@@ -195,7 +203,6 @@ summary::before {
 
 [open] summary::before {
   transform: rotate(45deg);
-  content: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 
 

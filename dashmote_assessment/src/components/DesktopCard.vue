@@ -1,9 +1,8 @@
 <template>
     <div class="desktop">
 
-        <!-- Input -->
+        <!--Div for search  -->
         <div class="d-flex mt-5 search">
-
             <div class="ant-transfer-list-body-search-wrapper">
                 <span class="ant-input-affix-wrapper ant-transfer-list-search" id="search">
                     <span class="ant-input-prefix">
@@ -32,7 +31,7 @@
             </div>
         </div>
 
-
+        <!-- Project list -->
         <div :class="`desktop row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
             <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>
             <p class="project"> {{ project.name }}</p>
@@ -77,8 +76,8 @@ export default {
         }
     },
 
-    //TODO: make it not case sensitive
     computed: {
+        //Filter for projects (Case insensitive)
         filteredProjects: function () {
             return this.projects.filter((project) => {
                 return project.name.toLowerCase().match(this.search.toLowerCase())
@@ -93,7 +92,7 @@ export default {
     width: 70rem;
 }
 
-.search{
+.search {
     box-sizing: border-box;
     width: 20%;
     height: 2.5em;
@@ -122,7 +121,7 @@ export default {
     margin-top: 100px;
 }
 
-.ant-transfer-list-body-search-wrapper{
+.ant-transfer-list-body-search-wrapper {
     padding: 0%;
 }
 

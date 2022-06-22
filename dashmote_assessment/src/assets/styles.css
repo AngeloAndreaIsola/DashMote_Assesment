@@ -1,45 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900,300light);
 
-table {
-    border-collapse: separate;
-    border-spacing: 0px 15px;
-    /* margin-left: 10%;
-    margin-right: 10%; 
-    width: 80%;
-    */
-    overflow-y: scroll;
-    table-layout: auto;
-    width: 100%;
-}
-
-tr {
-    box-shadow: 0px 4px 20px rgba(120, 120, 120, 0.15);
-}
-
-td {
-    width: 250px;
-    height: 5em;
-    text-align: center;
-    padding: 5px;
-    background-color: white;
-}
-
-/* Make table row with rounded borders
- */
-/* Set border-radius on the top-left and bottom-left of the first table data on the table row
- */
-td:first-child,
-th:first-child {
-    border-radius: 10px 0 0 10px;
-}
-
-/* Set border-radius on the top-left and bottom-left of the first table data on the table row
- */
-td:last-child,
-th:last-child {
-    border-radius: 0 10px 10px 0;
-}
-
+/* Define single desktop row style */
 .row {
     width: 200px;
     height: 5em;
@@ -48,6 +9,7 @@ th:last-child {
     background-color: white;
 }
 
+/* Define ddesktop style */
 .desktop {
     width: 100%;
     overflow-y: scroll;
@@ -73,7 +35,7 @@ body {
     display: none;
 }
 
-
+/* Hide mobile menu */
 .anticon-menu {
     display: none;
 }
@@ -95,9 +57,7 @@ body {
     display: inline-block;
 }
 
-.site-page-header {
-    border-bottom: 1px solid #C4C4C4;
-}
+
 
 .dashboardsNumber {
     color: #00CC74;
@@ -176,17 +136,13 @@ nav {
     height: 62px;
     justify-content: center;
     border-bottom-style: groove;
-    /* margin-left: 10%;
-    margin-right: 10%; */
 }
 
+/* Define nav menu elemnts position */
 .left-menu,
 .right-menu {
     text-align: center;
     text-decoration: none;
-    top: 197px;
-    /* width: 128px; */
-    /* max-width: 128px; */
 }
 
 .left-menu,
@@ -202,52 +158,14 @@ nav {
     float: right;
 }
 
-/* Adapt search bar for desktop */
-/* #search {
-    box-sizing: border-box;
-    width: 200px;
-    height: 2.5em;
-    bottom: 0%;
-    border-radius: 8px;
-    border: 1px solid #C4C4C4;
-    background: #FFFFFF;
-    flex-shrink: 0;
-    float: right; */
 
-/* Paragraph Regular */
-
-/* font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px; */
-/* identical to box height, or 157% */
-
-
-/* Middle Grey */
-
-/* color: #787878;
-} */
-
-
-.tabAndSearch {
-    display: inline-block;
-    position: relative;
-    margin-top: 10%;
-    width: 100%;
-}
-
+/* Define mobile aspects */
 @media all and (max-width: 800px) {
-    .site-page-header {
-        border-bottom: none
-    }
-
+    /* Hide nav bottom border */
     nav {
         height: 62px;
         justify-content: center;
         border-bottom-style: none;
-        /* margin-left: 10%;
-        margin-right: 10%; */
     }
 
     /* Hide desktop project list */
@@ -321,11 +239,6 @@ nav {
         background: #FFFFFF;
         flex-shrink: 0;
 
-        /*
-        float: right;
-         margin-left: 10%;
-        margin-right: 10%; */
-
         /* Paragraph Regular */
 
         font-family: 'Roboto';
@@ -341,7 +254,7 @@ nav {
         color: #787878;
     }
 
-
+    /* Define nav elemets mobile positions */
     .anticon-menu {
         display: inline-block;
         left: 0%;
