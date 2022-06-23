@@ -32,13 +32,15 @@
         </div>
 
         <!-- Project list -->
-        <div :class="`desktop row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
-            <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>
-            <p class="project"> {{ project.name }}</p>
-            <p class='user'> {{ project.users }} users</p>
-            <div class="dashboardsNumber">{{ project.dashboards }} dashboards</div>
-            <div class="delete" @click="deleteproject(index)">
-                <a-button type="text" danger>Delete</a-button>
+        <div class="projectListDesktop">
+            <div :class="`desktop row ${project.category}`" v-for="(project, index) in filteredProjects" :key="index">
+                <a-avatar :class="`avatar-${project.category}`"> {{ project.category }}</a-avatar>
+                <p class="project"> {{ project.name }}</p>
+                <p class='user'> {{ project.users }} users</p>
+                <div class="dashboardsNumber">{{ project.dashboards }} dashboards</div>
+                <div class="delete" @click="deleteproject(index)">
+                    <a-button type="text" danger>Delete</a-button>
+                </div>
             </div>
         </div>
     </div>

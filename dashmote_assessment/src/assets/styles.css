@@ -12,8 +12,13 @@
 /* Define ddesktop style */
 .desktop {
     width: 100%;
-    overflow-y: scroll;
     table-layout: auto;
+}
+
+/* Overflow only on the list */
+.projectListDesktop {
+    width: 100%;
+    overflow-y: scroll;
     max-height: 510px;
 }
 
@@ -146,7 +151,7 @@ nav {
 }
 
 .left-menu,
-.right-menu > *{
+.right-menu>* {
     margin: 10px;
 }
 
@@ -161,6 +166,7 @@ nav {
 
 /* Define mobile aspects */
 @media all and (max-width: 800px) {
+
     /* Hide nav bottom border */
     nav {
         height: 62px;
@@ -270,7 +276,7 @@ nav {
     }
 
     .left-menu,
-    .right-menu > *{
+    .right-menu>* {
         margin: 10px;
     }
 

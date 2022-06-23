@@ -13,15 +13,12 @@
         <a-avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
       </div>
     </nav>
-
+  
 
     <div class="mobileHeader" style="margin-bottom:0% ;">
       <h1>Hello Sarah!</h1>
       <p>Here you can find your projects and dashboards.</p>
     </div>
-
-
-
 
 
   </div>
